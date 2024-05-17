@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                container: {
+                    padding: {
+                        DEFAULT: '4rem',
+                        sm: '2rem',
+                        lg: '6rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                },
+                extend: {
+                    backgroundImage: {
+                        'home': "url('img/home.jpg')",
+                        'question': "url('img/question.jpg')",
+                    },
+                    colors: {
+                        primary: '#262422',
+                        secondary: '#CBA061',
+                        secondary_ligth: '#F5D19C',
+                        primary_light: '#38342E'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="navbar fixed z-50 left-0 w-full p-5 border-b border-white border-opacity-20">
+        <div class="container mx-auto">
+            <div class="flex w-full justify-between">
+                <div class="flex">
+                    <img src="img/logo.svg" alt="">
+                    <ul class="flex ml-5 text-white uppercase">
+                        <li class="mx-5">
+                            <a href="">О компании</a>
+                        </li>
+
+                        <li class="mx-5">
+                            <a href="">услуги</a>
+                        </li>
+
+                        <li class="mx-5">
+                            <a href="">каталог</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="flex text-white items-center">
+                    <div class="flex">
+                        <img class="w-5 mr-5" src="img/phone_icon.svg" alt="">
+                        <a href="" class="number mr-5">+7 777 - 777 - 77 - 77</a>
+                    </div>
+
+
+                    <div class="flex items-center">
+                        <img class="w-5 mr-5" src="img/arrow_r.svg" alt="">
+                        <a class="uppercase" href="">заказать звонок</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-cover bg-no-repeat bg-home relative">
+        <div class="flex items-center flex-col justify-center h-screen text-white">
+            <h1 class="text-[42px] uppercase font-bold mb-5">Межкомнатные двери в астане</h1>
+            <p class="text-center">Нам хочется, чтобы вы смогли создать дом, наполненный радостью. Уверены, что вместе
+                мы подберем напольное<br>
+                покрытие, которое сделает вашу мечту реальностью и прослужит долго.</p>
+
+            <a class="bg-secondary px-5 py-3 mt-5 text-black uppercase font-bold text-[14px] rounded-lg hover:bg-secondary_ligth transition-all"
+                href="">Связаться с нами</a>
+
+        </div>
+
+
+        <div class="w-full flex p-8 absolute bottom-0 left-0 border-t border-white border-opacity-20 z-50">
+            <div class="container mx-auto">
+                <div class="relative">
+                    <div class="flex justify-between items-center w-full  absolute -top-[55px]">
+                        <img class="w-[38px] rounded-full bg-primary_light  border border-white border-opacity-20 p-2"
+                            src="img/arrow_btn.svg" alt="">
+
+                        <div
+                            class="flex border border-white  rounded-full border-opacity-20 bg-primary_light p-2 right-0">
+                            <img class="mx-2 w-[30px]" src="img/facebook_icon.svg" alt="">
+                            <img class="mx-2 w-[30px]" src="img/facebook_icon.svg" alt="">
+                            <img class="mx-2 w-[30px]" src="img/facebook_icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="h-screen">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae veniam eos porro hic error
+            delectus suscipit facere labore, id expedita sint dolor ullam aut velit quia exercitationem tempora. Atque.
+        </p>
+    </section>
+
+
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d80103.51967888452!2d71.4309632!3d51.1410176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1715967062864!5m2!1sru!2skz"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="bg-primary  text-white font-bold uppercase relative">
+        <div class="flex w-full items-center justify-center relative -top-[15px] ">
+            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center ">
+                <img class="w-5" src="img/arrow-footer.svg" alt="">
+            </div>
+        </div>
+
+        <div class="relative p-5">
+            <div class="border border-white absolute top-24 left-0 border-opacity-20 w-full"></div>
+            <div class="container mx-auto">
+
+                <ul
+                    class="p-10 border border-white border-opacity-20 flex items-center justify-between bg-primary z-50 relative m-5">
+                    <li class="flex items-center">
+                        <img class="mx-2" src="img/gps_icon.svg" alt="">
+                        <a href="">Astana, Moskovskaya st., 9A</a>
+                    </li>
+                    <li class="flex items-center">
+                        <img class="mx-2" src="img/gps_icon.svg" alt="">
+                        <a href="">+7 705 879 23 10</a>
+                    </li>
+                    <li class="flex items-center">
+                        <img class="mx-2" src="img/gps_icon.svg" alt="">
+                        <a href="">info@stroiboom.kz</a>
+                    </li>
+                    <li class="flex items-center">
+                        <img class="mx-2" src="img/gps_icon.svg" alt="">
+                        <a href="">Mon-Sat: 10:00-19:00, Sun: 10:00-15:00</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-primary_light ">
+            <div class="container mx-auto">
+                <div class="flex justify-between p-10">
+                    <span>design by alex</span>
+                    <span>All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
